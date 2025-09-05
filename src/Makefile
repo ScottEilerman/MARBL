@@ -80,6 +80,7 @@ CPPDEFS=
 
 ifeq ($(USEMPI),TRUE)
   MPISUF=-mpi
+  override FC = mpif90
 endif
 
 #########################
