@@ -79,9 +79,7 @@ OBJS = $(addprefix $(OBJ_DIR)/,${MODULES:.F90=.o})
 CPPDEFS=
 
 ifeq ($(USEMPI),TRUE)
-  CPPDEFS+= -DMARBL_TIMING_OPT=MPI
   MPISUF=-mpi
-  override FC = mpif90
 endif
 
 #########################
